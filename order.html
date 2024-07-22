@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+#contact {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hp {
+    color: #e27d60;
+    font-size: 1.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #e27d60;
+}
+
+textarea {
+    resize: vertical;
+}
+
+section {
+    margin-top: 20px;
+}
+
+article.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+article.item p {
+    margin: 0;
+}
+
+.flavor, .dessert {
+    font-weight: bold;
+}
+
+.price {
+    color: #e27d60;
+    font-weight: bold;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #e27d60;
+}
+
+</style>
+<body>
+    <section id="contact">
+        <h2 class="hp center">Contact Us</h2>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Enter Your Name:</label>
+                    <input type="text" name="name" id="name" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter Your Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="name1">Enter Your Phone:</label>
+                    <input type="text" name="phone" id="name1" >
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+
+            <section>
+                <h2>Coffee Haven</h2>
+                <article class="item">
+                  <p class="flavor">Cappuccino</p>
+                  <p class="price">150</p>
+                </article>
+                <article class="item">
+                  <p class="flavor">Espresso</p>
+                  <p class="price">275</p>
+                </article>
+                <article class="item">
+                  <p class="flavor">Americano</p>
+                  <p class="price">150</p>
+                </article>
+                <article class="item">
+                  <p class="flavor">Hazelnut</p>
+                  <p class="price">300</p>
+                </article>
+                <article class="item">
+                  <p class="flavor">Mocha</p>
+                  <p class="price">350</p>
+                </article>
+              </section>
+              <section>
+                <h2>Snacks</h2>
+                <!-- <img
+                  src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg"
+                  alt="pie icon"
+                /> -->
+                <article class="item">
+                  <p class="dessert">Cookies</p>
+                  <p class="price">50</p>
+                </article>
+                <article class="item">
+                  <p class="dessert">Sandwich</p>
+                  <p class="price">120</p>
+                </article>
+                <article class="item">
+                  <p class="dessert">Cheesecake</p>
+                  <p class="price">300</p>
+                </article>
+                <article class="item">
+                  <p class="dessert">Donut</p>
+                  <p class="price">80</p>
+                </article>
+              </section>
+
+        </div>
+    </section>
+</body>
+</html>
